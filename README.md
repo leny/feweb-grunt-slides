@@ -4,7 +4,7 @@
 
 * * *
 
-Note: since the presentation was given in a french-speaking context, from this point, the instruction will be in french. Sorry.
+**Note:** since the presentation was given in a french-speaking context, from this point, the instruction will be in french. Sorry.
 
 * * *
 
