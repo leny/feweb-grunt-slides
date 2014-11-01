@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <title>feweb - Front-end Dev : Boostez votre workflow avec Grunt et Bower</title>
+
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+
+    <body>
+        <article>
+            <section data-bespoke-state="intro" class="intro">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            feweb <small>- Front-end Dev : Boostez votre workflow avec Grunt et Bower</small>
+                        </div>
+                    </div>
+                    <h2>Automatisation Front-end avec GruntJS</h2>
+                    <div class="byline">
+                        <div class="classy">
+                            04 novembre 2014
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="whoami-one" class="whoami-one">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            qui suis-je ?
+                        </div>
+                    </div>
+                    <h2>Pierre-Antoine Delnatte</h2>
+                    <div class="byline">
+                        <div class="classy">
+                            29 ans, développeur web freelance, prof de RIA à l'HEPL
+                        </div>
+                    </div>
+                    <h4>
+                        <i></i> http://leny.me
+                    </h4>
+                    <h4>
+                        <i></i> @leny_be
+                    </h4>
+                    <h4>
+                        <i></i> leny
+                    </h4>
+                </div>
+            </section>
+
+            <section data-bespoke-state="repeating" class="repeating">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            c'est un fait, tous les jours,
+                        </div>
+                    </div>
+                    <h2>nous répétons les mêmes tâches</h2>
+                    <div class="byline">
+                        <div class="classy">
+                            encore, et encore, et encore...
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="repeating-two" class="repeating-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            autant faire simple, utilisons
+                        </div>
+                    </div>
+                    <h3>un task-runner</h3>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="whats-a-runner" class="whats-a-runner">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            yeah, carrément !
+                        </div>
+                    </div>
+                    <h3>euh... c'est quoi, un task runner ?</h3>
+                    <div class="byline">
+                        <div class="classy">
+                            (c'est vrai, ça, c'est quoi ?)
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="graphical-ui" class="graphical-ui">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            il existe deux grands types de task runners :
+                        </div>
+                    </div>
+                    <h2>les task runners "graphiques"</h2>
+                    <div class="byline">
+                        <div class="classy">
+                            faciles à utiliser, vite limités
+                        </div>
+                    </div>
+                    <h3>Codekit, Prepros, Koala…</h3>
+                </div>
+            </section>
+
+            <section data-bespoke-state="cli-ui" class="cli-ui">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            …et
+                        </div>
+                    </div>
+                    <h2>les task runners en ligne de commande</h2>
+                    <div class="byline">
+                        <div class="classy">
+                            à peine plus complexe, mais potentiellement sans limite
+                        </div>
+                    </div>
+                    <h3>Grunt, Gulp, Broccoli…</h3>
+                </div>
+            </section>
+
+            <section data-bespoke-state="about-grunt" class="about-grunt">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            aujourd'hui, parlons de
+                        </div>
+                    </div>
+                    <h2>Grunt</h2>
+                    <div class="byline">
+                        <div class="classy">
+                            http://gruntjs.com
+                        </div>
+                    </div>
+                    <img alt="grunt" src="img/grunt-logo.png" width="256" />
+                </div>
+            </section>
+
+            <section data-bespoke-state="install-grunt-node" class="install-grunt-node">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            installer grunt : partie 1
+                        </div>
+                    </div>
+                    <h2>installer node.js</h2>
+                    <div class="byline">
+                        <div class="classy">
+                            <i></i>
+                        </div>
+                    </div>
+                    <h3>http://nodejs.org</h3>
+                </div>
+            </section>
+
+            <section data-bespoke-state="install-grunt-cli" class="install-grunt-cli">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            installer grunt : partie 2
+                        </div>
+                    </div>
+                    <h2>
+                        <kbd>
+                            npm install -g grunt-cli
+                        </kbd>
+                    </h2>
+                    <div class="byline">
+                        <div class="classy">
+                            <i></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="setup-part-one" class="setup-part-one">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            ok, on est prêts !
+                        </div>
+                    </div>
+                    <h2>notre premier projet avec GruntJS</h2>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="intermission" class="intermission">
+                <div class="content">
+                    <p class="note">
+                         <i></i>
+                         /examples/project
+                    </p>
+                </div>
+            </section>
+
+            <section data-bespoke-state="setup-part-two" class="setup-part-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            d'abord, on a besoin d'un fichier
+                        </div>
+                    </div>
+                    <h2>
+                        <kbd>
+                            package.json
+                        </kbd>
+                    </h2>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="intermission" class="intermission">
+                <div class="content">
+                    <p class="note">
+                         <i></i>
+                         /examples/setup/package.json
+                    </p>
+                </div>
+            </section>
+
+            <section data-bespoke-state="setup-part-three" class="setup-part-three">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            …et d'un fichier
+                        </div>
+                    </div>
+                    <h2>
+                        <kbd>
+                            /examples/setup/Gruntfile.js
+                        </kbd>
+                    </h2>
+                    <div class="byline">
+                        <div class="classy">
+                            <kbd>.coffee</kbd>, ça marche aussi.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="intermission" class="intermission">
+                <div class="content">
+                    <p class="note">
+                         <i></i>
+                         Gruntfile.js
+                    </p>
+                </div>
+            </section>
+
+            <section data-bespoke-state="i-need-plugins" class="i-need-plugins">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            …pour compiler mes fichiers stylus et coffeescript,
+                        </div>
+                    </div>
+                    <h3>
+                        j'ai besoin de plugins !
+                    </h3>
+                    <div class="byline">
+                        <div class="classy">
+                            ça tombe bien, y a plus de 3600 à disposition !
+                        </div>
+                    </div>
+                    <h2>
+                        http://gruntjs.com/plugins
+                    </h2>
+                </div>
+            </section>
+
+            <section data-bespoke-state="i-need-plugins-two" class="i-need-plugins-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            …pour le moment, on a besoin de <kbd>grunt-contrib-stylus</kbd> &amp; <kbd>grunt-plugin-coffee</kbd>
+                        </div>
+                    </div>
+                    <h4>
+                        <kbd>
+                            npm install --save-dev grunt-contrib-stylus
+                        </kbd>
+                    </h4>
+                    <h4>
+                        <kbd>
+                            npm install --save-dev grunt-contrib-coffee
+                        </kbd>
+                    </h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="intermission" class="intermission">
+                <div class="content">
+                    <p class="note">
+                         <i></i>
+                         /examples/project-install/package.json
+                    </p>
+                    <p class="note">
+                         <i></i>
+                         /examples/project-install/Gruntfile.js
+                    </p>
+                </div>
+            </section>
+
+            <section data-bespoke-state="watching-one" class="watching-one">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            …bon, tout ça, c'est bien, mais…
+                        </div>
+                    </div>
+                    <h3>
+                        je dois relancer la tâche à chaque changement ?!
+                    </h3>
+                    <div class="byline">
+                        <div class="classy">
+                            c'est nul.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="watching-two" class="watching-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            bien sûr que non !
+                        </div>
+                    </div>
+                    <h3>
+                        <kbd>grunt-contrib-watch</kbd> <span class="lowercase">à la rescousse !</span>
+                    </h3>
+                    <br /><!-- This is sad. -->
+                    <h4>
+                        <kbd>
+                            npm install --save-dev grunt-contrib-watch
+                        </kbd>
+                    </h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="intermission" class="intermission">
+                <div class="content">
+                    <p class="note">
+                         <i></i>
+                         /examples/project-watch/Gruntfile.js
+                    </p>
+                </div>
+            </section>
+
+            <section data-bespoke-state="go-further" class="go-further">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            on a fait le tour des bases…
+                        </div>
+                    </div>
+                    <h3>
+                        aller plus loin avec Grunt ?
+                    </h3>
+                    <div class="byline">
+                        <div class="classy">
+                            plus de 3600 plugins…
+                        </div>
+                    </div>
+                    <h4>
+                        …pourquoi pas les vôtres ?
+                    </h4>
+                </div>
+            </section>
+
+            <section data-bespoke-state="about-gulp" class="about-gulp">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            ouais, mais…
+                        </div>
+                    </div>
+                    <h2>et Gulp ?</h2>
+                    <div class="byline">
+                        <div class="classy">
+                            http://gulpjs.com
+                        </div>
+                    </div>
+                    <img alt="grunt" src="img/gulp-logo.png" height="256" />
+                </div>
+            </section>
+
+            <section data-bespoke-state="see-ya" class="see-ya">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            ce sera tout pour ce soir
+                        </div>
+                    </div>
+                    <h2>merci à tous !</h2>
+                    <div class="byline">
+                        <div class="classy">
+                            des questions ?
+                        </div>
+                    </div>
+                    <h4>
+                        <img alt="leny" src="img/leny.jpg" height="64" />
+                        <span>Pierre-Antoine Delnatte</span>
+                    </h4>
+                    <h4>
+                        <i></i> http://leny.me
+                    </h4>
+                    <h4>
+                        <i></i> @leny_be
+                    </h4>
+                    <h4>
+                        <i></i> leny
+                    </h4>
+                </div>
+            </section>
+
+        </article>
+        <script src="js/bespoke.js"></script>
+        <script src="js/deck.js"></script>
+    </body>
+</html>
